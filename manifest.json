@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+
+		"name": "My test extension Rob",
+		"description": "This is a Chrome extension lab",
+		"version": "0.1",
+
+		"content_scripts": [
+		{
+			"matches": ["https://*/*", "http://*/*"],
+			"js": ["dom.js"]
+		}
+		],
+
+		"browser_action": {
+			"default_icon": "icon.png",
+			"default_popup": "popup.html"
+		},
+		"permissions": [
+			"activeTab"
+		]
+}
